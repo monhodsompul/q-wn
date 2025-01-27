@@ -21,8 +21,8 @@ apt install qemu-kvm -y
 qemu-img create -f raw memek 50G 
 
 qemu-system-x86_64 \
-  -m 12G \
-  -smp cores=3 \
+  -m 24G \
+  -smp cores=7 \
   -boot order=c \
   -drive file=win.iso,media=cdrom \
   -drive file=memek,format=raw \
