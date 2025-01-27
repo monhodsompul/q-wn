@@ -18,7 +18,7 @@ sudo apt update
 
 sudo apt install qemu-kvm -y 
 
-qemu-img create -f raw memek 15G 
+qemu-img create -f raw memek 50G 
 
 qemu-system-x86_64 \
   -m 12G \
