@@ -17,8 +17,8 @@ sudo apt install qemu-kvm -y
 qemu-img create -f raw memek 15G 
 
 qemu-system-x86_64 \
-  -m 12G \
-  -smp cores=4 \
+  -m 3G \
+  -smp cores=3 \
   -boot order=c \
   -drive file=memek,format=raw \
   -device usb-ehci,id=usb,bus=pci.0,addr=0x4 \
