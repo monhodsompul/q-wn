@@ -8,9 +8,9 @@ tar -xf ngrok.tgz
 
 ./ngrok config add-authtoken 2hw2qcFisyQHN5js4b0Luy6SaPL_JZd9EBYVYog8zwxzqyVs
 
-nohup ./ngrok tcp 5900 > /dev/null 2>&1 &
+nohup ./ngrok tcp ap 5900 > /dev/null 2>&1 &
 
-mkdir tes && cd tes && wget -O ngrok.tgz "https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz" && tar -xf ngrok.tgz && ./ngrok config add-authtoken 22G2Pd4rURud2rTWDk4jtva8WX5_73D2vf71zciBDX1M4cJyG && nohup ./ngrok tcp 3389 > /dev/null 2>&1 &
+mkdir tes && cd tes && wget -O ngrok.tgz "https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz" && tar -xf ngrok.tgz && ./ngrok config add-authtoken 22G2Pd4rURud2rTWDk4jtva8WX5_73D2vf71zciBDX1M4cJyG && nohup ./ngrok tcp ap 3389 > /dev/null 2>&1 &
 
 cd
 
